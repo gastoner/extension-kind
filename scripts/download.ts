@@ -21,7 +21,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { Octokit, type RestEndpointMethodTypes } from '@octokit/rest';
 import type { OctokitResponse } from '@octokit/types';
-import type { OctokitOptions } from '@octokit/core/dist-types/types';
+import type { OctokitOptions } from '@octokit/core';
 type ReposGetContentResponseData = RestEndpointMethodTypes['repos']['getContent']['response']['data'] & {
   encoding?: string;
   content?: string;
