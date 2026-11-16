@@ -18,7 +18,7 @@
 # BUILDPLATFORM keeps the builder stage native: the airgapped variant is built
 # for darwin and windows platforms too, and only the kind binary downloaded
 # below actually differs per target.
-FROM --platform=$BUILDPLATFORM registry.access.redhat.com/ubi10/nodejs-24-minimal:10.1-1766060610 AS builder
+FROM --platform=$BUILDPLATFORM registry.access.redhat.com/ubi10/nodejs-24-minimal:1791463197@sha256:498ccfc43f6fe349a4d87db6af6d83ab420e9450f3800140cdc90c290dcd462f AS builder
 
 ARG AIRGAP="false"
 ARG TARGETOS
